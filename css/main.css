@@ -1,0 +1,380 @@
+/* CSS Document */
+/* michaelkilmer.com */
+/* Author: Mike Kilmer */
+/* email : mrmikekilmer@gmail.com */
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-repeat: repeat;
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+section {
+    min-height: 500px;
+    padding-top: 95px;
+    position: relative;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #004040;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    color: #004040;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #004040;
+    font-size: 18px;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+a {
+    color: #004040;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+b {
+    font-weight: 700;
+}
+
+.hide {
+    display: none;
+}
+
+/* Header Styles */
+
+#header {
+    height: 79px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-repeat: repeat-x;
+    background-image: url('../images/header-bg.png');
+    z-index: 95;
+}
+
+#inner-header {
+    height: 80px;
+    max-width: 1044px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#title {
+    font-family: 'Roboto', Helvetica, sans-serif;;
+    font-size: 40px;
+    line-height: 60px;
+    text-shadow: 0px 2px 3px #555;
+    color: #C8AB94;
+    font-weight: normal;
+    margin-left: 40px;
+    float: left;
+}
+
+#title span {
+    color: #70A3A3;
+}
+
+nav.main-navigation {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 11px;
+    z-index: 10;
+    float: right;
+}
+
+.main-navigation a.nav-link {
+    display: inline-block;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-shadow: 0px 1px 3px #555;
+    font-weight: normal;
+    z-index: 10;
+}
+
+.main-navigation a.nav-link.active {
+    color: #004040;
+    background: #da9f6d;
+    padding: 10px;
+    box-shadow: 2px 2px 10px #555;
+    text-shadow: none;
+    transition: background 0.5s;
+}
+
+.main-navigation #socialMedia {
+    display: none;
+}
+
+a.mobile {
+    display: none;
+}
+
+a.mobile span {
+    height: 5px;
+    border-top: 2px solid #fff;
+    display: block;
+    width: 20px;
+}
+
+@media( max-width: 768px) {
+
+    a.mobile {
+        display: block;
+        float: right;
+        padding: 17px 20px;
+        cursor: pointer;
+    }
+
+    #header {
+        height: 50px;
+    }
+
+    nav.main-navigation {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        background: rgb(226,181,144);
+        padding-top: 0;
+    }
+
+    .main-navigation a.nav-link.active {
+        color: #fff;
+        background: #da9f6d;
+        padding: 10px;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    .main-navigation.open {
+        display: block;
+    }
+
+    .main-navigation #socialMedia {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .main-navigation .social-media {
+        margin: 0 auto;
+    }
+
+    .main-navigation a.nav-link {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+        text-decoration: none;
+        color: #004040;
+        font-size: 20px;
+        text-shadow: none;
+        font-weight: normal;
+        z-index: 10;
+        color: #004040;
+        border-bottom: 1px solid #004040;
+    }
+
+    #title {
+        font-family: Helvetica, sans-serif;;
+        font-size: 25px;
+        line-height: 50px;
+        text-shadow: 0px 2px 3px #555;
+        color: #fbc89e;
+        font-weight: normal;
+        margin-left: 10px;
+        float: left;
+    }
+
+}
+
+/* Main Styles */
+
+#wrapper {
+    width: 100%;
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.banner {
+    color: #004040;
+    background: #da9f6d;
+    padding: 10px;
+    box-shadow: 2px 2px 10px #555;
+    text-shadow: none;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    left: -10px;
+}
+
+.newsBox {
+    background: rgba(255,255,255,0.4);
+    max-width: 920px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 8px 0px #555;
+    padding: 40px 20px 20px 20px;
+    z-index: 0;
+    margin-left: 10px;
+    position: relative;
+}
+
+.newsBox p {
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+    .newsBox {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .newsBox p {
+        font-family: Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        margin-top: 0px;
+        margin: 10px 0 15px;
+    }
+}
+
+.newsBox ul {
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.newsBox .center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portfolio-pic {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.portfolio-pic img {
+    max-width: 920px;
+    width: 100%;
+    display: block;
+}
+
+.profile-pic {
+    float: right;
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 20px;
+    border: 5px solid #fff;
+}
+
+.contact-table {
+    float: right;
+}
+
+@media(max-width: 500px) {
+    .profile-pic {
+        float: none !important;
+        margin: 15px auto;
+        padding-left: 0;
+    }
+}
+
+/* Footer Styles */
+
+footer {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0px;
+}
+
+#inner-footer {
+    color: #004040;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    text-align: left;
+    float: right;
+}
+
+#socialMedia {
+    float: right;
+    width: auto;
+    vertical-align: middle;
+    box-shadow: -2px -2px 10px rgba(0,0,0,0.2);
+    background: rgba(218,159,109,0.5);
+}
+
+@media(max-width: 500px) {
+    #socialMedia,
+    .contact-table {
+        display: none;
+    }
+}
+
+.social-media td {
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 17px;
+}
+
+.social-media img {
+    max-width: 15px;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.social-media a {
+    max-width: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bandcamp {
+    float: left;
+    width: 25%;
+    box-shadow: -2px -2px 10px rgba(0,0,0,0.2);
+}
+
+iframe {
+    z-index: 0;
+}
