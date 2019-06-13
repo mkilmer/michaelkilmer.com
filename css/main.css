@@ -155,13 +155,16 @@ a.mobile span {
     }
 
     nav.main-navigation {
-        display: none;
+        display: block;
         width: 100%;
         position: absolute;
         left: 0;
         top: 50px;
         background: rgb(226,181,144);
         padding-top: 0;
+        height: 0;
+        overflow: hidden;
+        transition: height 350ms ease-in-out;
     }
 
     .main-navigation a.nav-link.active {
@@ -173,7 +176,7 @@ a.mobile span {
     }
 
     .main-navigation.open {
-        display: block;
+        height: 230px;
     }
 
     .main-navigation #socialMedia {
